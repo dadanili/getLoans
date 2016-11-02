@@ -10,17 +10,24 @@
   	<script src="app/services/services.js"></script>
 
 </head>
-<body ng-app= "loans">
+<!-- //status, activity, sector, use, location -->
 
+<body ng-app= "loans">
+	<div class="top-nav" role="navigation">Kiva<div>
 	<div ng-controller= "myController"> 
 
 		<ul>
-			<li ng-repeat= "item in loans">
-			<div>Name: {{item.name}}</div>
+			<li ng-repeat= "item in loans">Name: {{item.name}}
+				<ul >
+					<li>Status: {{item.status}}</li>
+					<li>Sector: {{item.sector}}</li>
+					<li>Country: {{item.location.country}}</li>
+					<li>Activity: {{item.activity}}</li>
+				</ul>
+			</li>
 		</ul>
 
-		<div class="top-nav" role="navigation"> 
-		<div>
+
 	
 	</div>
 

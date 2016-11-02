@@ -11,10 +11,20 @@
 
 </head>
 <body ng-app= "loans">
-	<div class="top-nav" role="navigation"> 
-	<div>
-	<div ng-controller= "myController"> </div>
-hiii
+
+	<div ng-controller= "myController"> 
+
+		<ul>
+			<li ng-repeat= "item in loans">
+			<div>Name: {{item.name}}</div>
+		</ul>
+
+		<div class="top-nav" role="navigation"> 
+		<div>
+	
+	</div>
+
+
 	<script
   src="https://code.jquery.com/jquery-3.1.1.js"
   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="

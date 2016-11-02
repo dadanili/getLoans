@@ -1,5 +1,5 @@
-angular.module('loans', [])
-.factory('services', function($http){
+angular.module('services', [])
+.factory('getCall', function($http){
 	return {
 		getLoans: function() {
 			return $http({

@@ -6,6 +6,6 @@ angular.module('loans', ['services', 'ngRoute'])
 		controller: 'myController'
 	})
 })
-.controller('myController', function(){
-	
+.controller('myController', function(getCall){
+	console.log('i am in controller')
 })

@@ -1,5 +1,5 @@
 angular.module('services', [])
-.factory('getCall', function($http){
+.factory('getCalls', function($http){
 	return {
 		getLoans: function() {
 			return $http({
@@ -8,6 +8,9 @@ angular.module('services', [])
 			})
 			.then(function(response){
 				console.log('got response', response)
+				if(response){
+					return response;
+				}
 			})
 		}
 	}

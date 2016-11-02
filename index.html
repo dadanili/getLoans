@@ -13,7 +13,7 @@
 <!-- //status, activity, sector, use, location -->
 
 <body ng-app= "loans">
-	<div class="top-nav" role="navigation">Kiva's Recent Loans<div>
+	<div id="top-nav" role="navigation">Kiva's Recent Loans<div>
 	<br></br>
 	<div ng-controller= "myController"> 
 		<div>
@@ -21,7 +21,7 @@
 			</a>
 			<select name="sector" ng-model="sector">
 
-				<option value="">---Please select---</option>
+				<option value="">---All---</option>
 				<option value='Agriculture'>Agriculture</option>
 				<option value='Retail'>Retail</option>
 				<option value='Housing'>Housing</option>
